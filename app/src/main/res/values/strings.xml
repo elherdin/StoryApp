@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Story App</string>
+    <string name="signup">SignUp</string>
+    <string name="login">Login</string>
+    <string name="message_welcome_page">we\'re glad that you are here</string>
+    <string name="title_welcome_page">Welcome!</string>
+    <string name="title_signup_page">SIGNUP</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="title_login_page">LOGIN</string>
+    <string name="name">Name</string>
+    <string name="logout">Logout</string>
+    <string name="upload_desc">Image Preview</string>
+    <string name="gallery">Gallery</string>
+    <string name="camera">Camera</string>
+    <string name="deskripsi">Description</string>
+    <string name="upload">Upload</string>
+    <string name="date">Date</string>
+</resources>
