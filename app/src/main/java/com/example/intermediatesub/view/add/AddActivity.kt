@@ -31,12 +31,14 @@ class AddActivity : AppCompatActivity() {
         binding = ActivityAddBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.loadingAdd.visibility = View.GONE
-        binding.btnGallery.setOnClickListener { startGallery() }
-        binding.btnCamera.setOnClickListener { startCamera() }
-        binding.btnUpload.setOnClickListener {
-            uploadImage()
-            binding.loadingAdd.visibility = View.GONE
+        binding.apply {
+            loadingAdd.visibility = View.GONE
+            btnGallery.setOnClickListener { startGallery() }
+            btnCamera.setOnClickListener { startCamera() }
+            btnUpload.setOnClickListener {
+                uploadImage()
+                loadingAdd.visibility = View.GONE
+            }
         }
     }
 
