@@ -7,6 +7,7 @@ import android.text.TextWatcher
 import android.util.AttributeSet
 import android.view.View
 import androidx.appcompat.widget.AppCompatEditText
+import com.example.intermediatesub.R
 
 class MyPassText : AppCompatEditText {
     constructor(context: Context) : super(context) {
@@ -39,7 +40,7 @@ class MyPassText : AppCompatEditText {
 
             override fun onTextChanged(s: CharSequence, start: Int, before: Int, count: Int) {
                 if (s.toString().length < 8) {
-                    setError("password must be at least 8 characters", null)
+                    setError(context.getString(R.string.pass_view), null)
                 } else {
                     error = null
                 }
